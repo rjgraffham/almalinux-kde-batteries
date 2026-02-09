@@ -33,6 +33,9 @@ jobs:
 
   build-iso:
     name: Build ISO
+    permissions:
+      packages: write
+      id-token: write
     needs: [set-env]
     uses: AlmaLinux/atomic-ci/.github/workflows/build-iso.yml@v11
     with:
