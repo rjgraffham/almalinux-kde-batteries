@@ -36,6 +36,7 @@ jobs:
     permissions:
       packages: write
       id-token: write
+      contents: read
     needs: [set-env]
     uses: AlmaLinux/atomic-ci/.github/workflows/build-iso.yml@v11
     with:
