@@ -9,7 +9,7 @@ dnf -y install https://github.com/manga-download/hakuneko/releases/download/nigh
 # directly to the image, instead it will ensure they're installed at first boot)
 cat << 'EOF' >> /etc/flatpak/default-flatpaks/system/install
 com.github.tchx84.Flatseal
-org.mozilla.Firefox
+org.mozilla.firefox
 org.libreoffice.LibreOffice
 md.obsidian.Obsidian
 EOF
