@@ -2,8 +2,13 @@
 
 set -xeuo pipefail
 
-# Start customizing your image here
+# create nix root under /var and symlink to expected location
+mkdir -p /var/nix
+ln -s /var/nix /nix
 
-# Examples:
-# dnf install -y 'dnf-command(config-manager)'
-# dnf config-manager --set-enabled crb
+# add basic command-line tools
+dnf -y install \
+    git \
+    make \
+    just \
+    nix
