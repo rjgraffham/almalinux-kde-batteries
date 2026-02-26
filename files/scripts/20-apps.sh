@@ -12,6 +12,8 @@ com.github.tchx84.Flatseal
 org.mozilla.firefox
 org.libreoffice.LibreOffice
 md.obsidian.Obsidian
+com.valvesoftware.Steam
+io.github.Faugus.faugus-launcher
 EOF
 
 # Same for removing flatpaks on first boot
